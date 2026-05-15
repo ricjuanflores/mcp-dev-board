@@ -1,4 +1,4 @@
-# AI Dev Board
+# MCP Dev Board
 
 Kanban board for development task management, with automatic AI suggestions (**Gemini 2.5 Flash**) and an **MCP Server** to integrate it directly with Cursor or Claude Desktop.
 
