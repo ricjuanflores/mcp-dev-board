@@ -23,7 +23,7 @@ Kanban board for development task management, with automatic AI suggestions (**G
 
 ```bash
 git clone <repo>
-cd ai-dev-board
+cd mcp-dev-board
 cp .env.example .env
 ```
 
@@ -40,13 +40,13 @@ docker compose up --build
 
 ## API Endpoints
 
-| Method | Endpoint                 | Description                  |
-| ------ | ------------------------ | ---------------------------- |
-| GET    | `/api/tasks/`            | List tasks                   |
-| POST   | `/api/tasks/`            | Create task                  |
-| PATCH  | `/api/tasks/{id}/`       | Update task                  |
-| DELETE | `/api/tasks/{id}/`       | Delete task                  |
-| POST   | `/api/tasks/ai-suggest/` | AI suggestion for a task     |
+| Method | Endpoint                 | Description              |
+| ------ | ------------------------ | ------------------------ |
+| GET    | `/api/tasks/`            | List tasks               |
+| POST   | `/api/tasks/`            | Create task              |
+| PATCH  | `/api/tasks/{id}/`       | Update task              |
+| DELETE | `/api/tasks/{id}/`       | Delete task              |
+| POST   | `/api/tasks/ai-suggest/` | AI suggestion for a task |
 
 ### Example: AI suggestion
 
@@ -78,7 +78,7 @@ The MCP Server allows Cursor to manage board tasks directly from the chat.
 
 ```json
 {
-  "ai-dev-board": {
+  "mcp-dev-board": {
     "command": "uv",
     "args": [
       "--directory",
@@ -92,13 +92,13 @@ The MCP Server allows Cursor to manage board tasks directly from the chat.
 
 ### Available tools
 
-| Tool                 | Description                                          |
-| -------------------- | ---------------------------------------------------- |
-| `list_tasks`         | List tasks, with optional filter by status           |
-| `create_task`        | Create a task with title, description, and priority  |
-| `update_task_status` | Change the status of a task                          |
-| `delete_task`        | Delete a task by ID                                  |
-| `get_board_summary`  | Board summary by status and priority                 |
+| Tool                 | Description                                         |
+| -------------------- | --------------------------------------------------- |
+| `list_tasks`         | List tasks, with optional filter by status          |
+| `create_task`        | Create a task with title, description, and priority |
+| `update_task_status` | Change the status of a task                         |
+| `delete_task`        | Delete a task by ID                                 |
+| `get_board_summary`  | Board summary by status and priority                |
 
 ### Usage example in Cursor
 

@@ -6,7 +6,7 @@ can manage board tasks directly from the IDE.
 
 Configure in Cursor → Settings → MCP → Add server:
 {
-  "ai-dev-board": {
+  "mcp-dev-board": {
     "command": "uv",
     "args": [
       "--directory",
@@ -23,7 +23,7 @@ from mcp.server.fastmcp import FastMCP
 
 API_URL = os.getenv("API_URL", "http://localhost:8000")
 
-mcp = FastMCP("ai-dev-board")
+mcp = FastMCP("mcp-dev-board")
 
 
 @mcp.tool()
